@@ -6,98 +6,7 @@ const themeButton = document.querySelector("#theme-btn");
 const deleteButton = document.querySelector("#delete-btn");
 
 let userText = null;
-
-
-
-// neww
-
-async function fetchData() {
-      try {
-        const response = await fetch('external_data.json'); // Replace 'external_data.json' with your file path
-        const data = await response.json();
-        return data;
-      } catch (error) {
-        console.error('Error fetching data:', error);
-        return null;
-      }
-    }
-    
-    
-  
-function findSimilarPhrase(userInput, phrases) {
-      let maxSimilarity = 0;
-      let similarPhrase = null;
-
-      phrases.forEach(phrase => {
-        const similarity = stringSimilarity.compareTwoStrings(userInput, phrase);
-        if (similarity > maxSimilarity) {
-          maxSimilarity = similarity;
-          similarPhrase = phrase;
-        }
-      });
-
-      return maxSimilarity >= 0.5 ? similarPhrase : null;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // Modify the getResponse function to accept user input and return the response or a random message
-async function getResponse(userInput) {
-  try {
-    let response = 'No response found';
-
-    const externalData = await fetchData();
-
-    if (externalData) {
-      const data = externalData;
-
-      // Check for exact matching inputs
-      data.forEach(entry => {
-        const inputs = entry['Input'].map(phrase => phrase.toLowerCase());
-        if (inputs.includes(userInput.toLowerCase())) {
-          const responses = entry['Response'];
-          response = responses[Math.floor(Math.random() * responses.length)];
-        }
-      });
-
-      // If no exact matching response found, try finding similar phrases
-      if (response === 'No response found') {
-        data.forEach(entry => {
-          const inputs = entry['Input'].map(phrase => phrase.toLowerCase());
-          const similarPhrase = findSimilarPhrase(userInput.toLowerCase(), inputs);
-          if (similarPhrase) {
-            const responses = entry['Response'];
-            response = responses[Math.floor(Math.random() * responses.length)];
-          }
-        });
-      }
-    }
-
-    // If still no response found, select a random message
-    if (response === 'No response found') {
-      const randomMessages = ["👀", "Enthonn", "Eeh", "😶"];
-      response = randomMessages[Math.floor(Math.random() * randomMessages.length)];
-    }
-
-    return response;
-  } catch (error) {
-    console.error('Error processing response:', error);
-    return 'Error occurred while processing the message';
-  }
-}
-
-
-
-
-
-
-
+const myApiKey = "manglishAIBotTestKey";
 
 
 const loadDataFromLocalstorage = () => {
@@ -135,18 +44,37 @@ const pElement = document.createElement("p");
 
 
    const userInput = userText; // Replace this with the actual user input
-getResponse(userInput)
-  .then(response => {
-    console.log('Bot Response:', response);
+   
+   
+   
+   
+   fetch('https://api.talim-platform.com/manglishAI', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+        user_input: userInput,
+        apikey: myApiKey
+    })
+})
+            .then(response => response.json())
+            .then(data => {
+                 console.log('Bot Response:', data.response);
     
-    pElement.textContent = response;
-  })
-  .catch(error => {
-    console.error('Error:', error);
+    pElement.textContent = data.response;
+    afterResp();
+            })
+            .catch(error => {
+                console.error('Error:', error);
     pElement.classList.add("error");
         pElement.textContent = "Oops! Something went wrong while retrieving the message. Please try again.";
-  });
+        afterResp();
+            });
    
+   
+   
+
    
 
 // Define the code logic to be executed after 5 seconds
@@ -165,7 +93,7 @@ function afterResp() {
 }
 
 
-setTimeout(afterResp, 1000);
+
     
 }
 
@@ -267,4 +195,4 @@ chatInput.addEventListener("keydown", (e) => {
 
 loadDataFromLocalstorage();
 sendButton.addEventListener("click", handleOutgoingChat);
-        
+          
