@@ -20,7 +20,9 @@ Manglish AI ChatBot - This Bot has a Capability to understand Natural Manglish L
 ## Developer Details
 Developer - ASHIK K I  
 Manglish AI ChatBot Was Created By ASHIK K I  
-Well Trained Manglish AI Bot With Has a Capability to Understand and Generate Data's In Manglish
+
+
+## Well Trained Manglish AI Bot With Has a Capability to Understand and Generate Data's In Manglish (Listed Below 👇)
 
 ### Android App
 - [Play Store Link - Coming Soon...]
