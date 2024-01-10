@@ -15,7 +15,7 @@ Manglish AI ChatBot - This Bot has a Capability to understand Natural Manglish L
 - Typing Animation
 
 ## Screenshots
-(https://github.com/blow-mainter/Manglish-AI-ChatBot/blob/87bd35aedab306b5630d1f1d2b8436ef2ef36b61/Screenshots/Screenshot1.jpg)
+https://github.com/blow-mainter/Manglish-AI-ChatBot/blob/87bd35aedab306b5630d1f1d2b8436ef2ef36b61/Screenshots/Screenshot1.jpg
 
 ## Developer Details
 Developer - ASHIK K I
@@ -23,15 +23,15 @@ Manglish AI ChatBot Was Created By ASHIK K I
 Well Trained Manglish AI Bot With Has a Capability to Understand and Generate Data's In Manglish
 
 ### Android App
-- [Play Store Link - Coming Soon...](#)
+- [Play Store Link - Coming Soon...]
 
 ### Website
-- [Website link](https://www.talim-platform.com/ai-tools/manglish-ai-chat)
+- [Manglish AI Web](https://www.talim-platform.com/ai-tools/manglish-ai-chat)
 
  ### API Keys
-- [API key website link - Coming Soon...](#)
+- [API key website link - Coming Soon...]
 
 
 ## Contact Details
 - Email: [blow.mainter@gmail.com](#mailto:blow.mainter@gmail.com)
-- Website: [Coming Soon...](#)
+- Website: [Coming Soon...]
