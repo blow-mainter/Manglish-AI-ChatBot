@@ -15,7 +15,7 @@ Manglish AI ChatBot - This Bot has a Capability to understand Natural Manglish L
 - Typing Animation
 
 ## Screenshots
-https://github.com/blow-mainter/Manglish-AI-ChatBot/blob/87bd35aedab306b5630d1f1d2b8436ef2ef36b61/Screenshots/Screenshot1.jpg
+![Website Screenshot](https://github.com/blow-mainter/Manglish-AI-ChatBot/blob/87bd35aedab306b5630d1f1d2b8436ef2ef36b61/Screenshots/Screenshot1.jpg)
 
 ## Developer Details
 Developer - ASHIK K I
