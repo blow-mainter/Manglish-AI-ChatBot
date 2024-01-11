@@ -1,4 +1,4 @@
-// TaLim AI
+// Manglish AI By ASHIK (Blow Mainter)
 const chatInput = document.querySelector("#chat-input");
 const sendButton = document.querySelector("#send-btn");
 const chatContainer = document.querySelector(".chat-container");
@@ -20,7 +20,7 @@ const loadDataFromLocalstorage = () => {
                             <h1>Manglish AI Bot</h1>
                             <p>Welcome To Manglish AI ChatBot<br> Developed By Ashik</p>
                             <br>
-                            <p>This AI Was Under Training - Sometimes it may send wrong outputs and this version was using a test Manglish AI Backend not real Manglish AI </p>
+                            <p>This AI Was Under Training - Sometimes it may send wrong response.</p>
                         </div>`
 
     chatContainer.innerHTML = localStorage.getItem("all-manglish-ai-chats") || defaultText;
@@ -48,7 +48,7 @@ const pElement = document.createElement("p");
    
    
    
-   fetch('http://api.talim-platform.com/manglishAI', {
+   fetch('https://api.talim-platform.com/manglishAI', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -195,4 +195,3 @@ chatInput.addEventListener("keydown", (e) => {
 
 loadDataFromLocalstorage();
 sendButton.addEventListener("click", handleOutgoingChat);
-          
