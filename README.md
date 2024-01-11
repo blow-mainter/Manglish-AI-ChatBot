@@ -27,7 +27,7 @@ Manglish AI ChatBot Was Created By ASHIK K I
 - [Play Store Link - Coming Soon...]
 
 ### Website
-- [Manglish AI Web](https://www.talim-platform.com/ai-tools/manglish-ai-chat)
+- [Manglish AI Web](https://blow-mainter.web.app/explore/manglish-ai-chat/)
 
  ### API Keys
 - [API key website link - Coming Soon...]
