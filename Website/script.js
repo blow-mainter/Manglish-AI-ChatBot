@@ -48,7 +48,7 @@ const pElement = document.createElement("p");
    
    
    
-   fetch('https://talim-api-dot-talim-platform.uc.r.appspot.com/manglishAI', {
+   fetch('http://api.talim-platform.com/manglishAI', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
