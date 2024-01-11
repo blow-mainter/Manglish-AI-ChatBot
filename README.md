@@ -36,3 +36,7 @@ Manglish AI ChatBot Was Created By ASHIK K I
 ## Contact Details
 - Email: [blow.mainter@gmail.com](#mailto:blow.mainter@gmail.com)
 - Website: [Coming Soon...]
+
+
+    
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%E2%98%95-yellow?style=for-the-badge)](https://razorpay.me/@blowmainter)
