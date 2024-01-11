@@ -9,7 +9,6 @@ Manglish AI ChatBot - This Bot has a Capability to understand Natural Manglish L
 - You Can Chat With Manglish Language
 - Trained With Manglish Data's
 - Capability to check Text Similarity With Threshold
-- You Can Change Or Add The Training Data's Easily
 - Standard Chat UI
 - Light & Dark Theme
 - Typing Animation
