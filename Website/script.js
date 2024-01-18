@@ -48,7 +48,7 @@ const pElement = document.createElement("p");
    
    
    
-   fetch('https://blow-mainter-api-dot-blow-mainter.uc.r.appspot.com//manglishAI', {
+   fetch('https://api.blow-mainter.com/manglishAI', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
