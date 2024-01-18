@@ -27,7 +27,7 @@ Manglish AI ChatBot Was Created By ASHIK K I
 - [Play Store Link - Coming Soon...]
 
 ### Website
-- [Manglish AI Web](https://blow-mainter.web.app/explore/manglish-ai-chat/)
+- [Manglish AI Web](https://blow-mainter.com/explore/manglish-ai-chat/)
 
  ### API Keys
 - [API key website link - Coming Soon...]
@@ -35,8 +35,8 @@ Manglish AI ChatBot Was Created By ASHIK K I
 
 ## Contact Details
 - Email: [blow.mainter@gmail.com](#mailto:blow.mainter@gmail.com)
-- Website: [Coming Soon...]
+- Website: [www.blow-mainter.com](https://www.blow-mainter.com)
 
-
+## More
     
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%E2%98%95-yellow?style=for-the-badge)](https://razorpay.me/@blowmainter)
